@@ -1,0 +1,107 @@
+[2026-04-09T20:32:28Z] === ENRICH ITERATION 1 START | repo=pyca/cryptography sha=622d672e ===
+[2026-04-09T20:32:28Z] [iter=1] PHASE START: enrich repo=pyca/cryptography sha=622d672e runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/622d672e-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/622d672e429a7cff836a23c5903683dbec1901f5.nq.gz
+[2026-04-09T20:32:49Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-04-09T20:33:20Z] [iter=1] AST store loaded triples=3592576 load_secs=29 mem_mb=923 MB
+[2026-04-09T20:33:20Z] [iter=1] Step 2: Finding LSP targets mem_mb=923 MB
+[2026-04-09T20:33:30Z] [iter=1] LSP targets found call_sites=33396 imports=1367 extends=152 implements=54 secs=10
+[2026-04-09T20:33:39Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=923 MB
+[2026-04-09T20:34:01Z] [iter=1] Position index built positions=236889 nodes_with_types=312185 secs=22 mem_mb=923 MB
+[2026-04-09T20:34:01Z] [iter=1] Step 3: Starting LSP resolution mem_mb=923 MB already_completed_types=[] already_completed_files=0
+[2026-04-09T20:34:01Z] [iter=1] Resolving target type target_type=call_site count=33396
+[2026-04-09T20:34:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.6 files_done=0 resolved=0 errors=0 current=tests/x509/test_x509_ext.py
+[2026-04-09T20:42:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=9.9 files_done=1 resolved=669 errors=337 current=tests/x509/test_x509.py
+[2026-04-09T20:59:48Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=27.3 files_done=2 resolved=1342 errors=1068 current=tests/x509/test_x509_revokedcertbuilder.py
+[2026-04-09T21:06:31Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=34.0 files_done=4 resolved=1565 errors=1354 current=tests/hazmat/primitives/test_aes_gcm.py
+[2026-04-09T21:07:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=35.5 files_done=5 resolved=1594 errors=1416 current=src/cryptography/hazmat/backends/openssl/backend.py
+[2026-04-09T21:16:16Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=43.8 files_done=7 resolved=1721 errors=1769 current=tests/test_utils.py
+[2026-04-09T21:17:10Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=44.7 files_done=8 resolved=2053 errors=1806 current=tests/x509/test_x509_crlbuilder.py
+[2026-04-09T21:19:10Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=46.7 files_done=9 resolved=2159 errors=1891 current=src/cryptography/x509/extensions.py
+[2026-04-09T21:20:50Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=48.4 files_done=10 resolved=2483 errors=1961 current=tests/hazmat/primitives/test_argon2.py
+[2026-04-09T21:28:07Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=55.7 files_done=12 resolved=2618 errors=2269 current=tests/hazmat/primitives/utils.py
+[2026-04-09T21:31:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=58.8 files_done=13 resolved=2685 errors=2404 current=tests/hazmat/primitives/test_pkcs12.py
+[2026-04-09T21:34:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=61.8 files_done=14 resolved=2794 errors=2530 current=tests/x509/verification/test_limbo.py
+[2026-04-09T21:35:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=62.6 files_done=16 resolved=2801 errors=2562 current=src/cryptography/hazmat/bindings/openssl/binding.py
+[2026-04-09T21:36:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=63.8 files_done=19 resolved=2888 errors=2615 current=tests/hazmat/backends/test_openssl.py
+[2026-04-09T21:38:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=65.6 files_done=21 resolved=2920 errors=2689 current=tests/hazmat/primitives/test_ed25519.py
+[2026-04-09T21:39:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=66.8 files_done=22 resolved=2943 errors=2740 current=tests/hazmat/primitives/test_aead.py
+[2026-04-09T21:43:41Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=71.2 files_done=23 resolved=3087 errors=2930 current=tests/hazmat/primitives/test_serialization.py
+[2026-04-09T21:49:51Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=77.4 files_done=24 resolved=3244 errors=3192 current=tests/wycheproof/test_ecdsa.py
+[2026-04-09T21:58:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=86.4 files_done=27 resolved=3423 errors=3574 current=tests/hazmat/primitives/test_ssh.py
+[2026-04-09T22:05:35Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=93.1 files_done=28 resolved=3538 errors=3859 current=tests/hazmat/primitives/test_keywrap.py
+[2026-04-09T22:09:31Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=97.1 files_done=30 resolved=3600 errors=4026 current=tests/hazmat/primitives/test_pkcs7.py
+[2026-04-09T22:14:26Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=102.0 files_done=31 resolved=3657 errors=4234 current=docs/development/custom-vectors/idea/verify_idea.py
+[2026-04-09T22:15:07Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=102.7 files_done=33 resolved=3665 errors=4263 current=src/cryptography/hazmat/primitives/serialization/pkcs7.py
+[2026-04-09T22:16:05Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=103.6 files_done=34 resolved=3722 errors=4304 current=tests/hazmat/primitives/test_kbkdf.py
+[2026-04-09T22:16:53Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=104.4 files_done=35 resolved=3740 errors=4338 current=tests/hazmat/primitives/test_sm4.py
+[2026-04-09T22:17:40Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=105.2 files_done=36 resolved=3774 errors=4372 current=tests/test_fernet.py
+[2026-04-09T22:19:44Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=107.3 files_done=37 resolved=3822 errors=4460 current=.github/bin/bump_dependency.py
+[2026-04-09T22:20:48Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=108.3 files_done=38 resolved=3842 errors=4505 current=tests/x509/verification/test_verification.py
+[2026-04-09T22:23:21Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=110.9 files_done=39 resolved=3868 errors=4614 current=tests/wycheproof/test_rsa.py
+[2026-04-09T22:23:58Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=111.5 files_done=40 resolved=3900 errors=4640 current=src/cryptography/hazmat/primitives/_serialization.py
+[2026-04-09T22:25:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=112.6 files_done=42 resolved=3940 errors=4687 current=tests/hazmat/primitives/test_cmac.py
+[2026-04-09T22:25:59Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=113.5 files_done=43 resolved=3954 errors=4726 current=tests/hazmat/primitives/fixtures_rsa.py
+[2026-04-09T22:26:30Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=114.0 files_done=47 resolved=4081 errors=4748 current=tests/wycheproof/test_ecdh.py
+[2026-04-09T22:27:48Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=115.3 files_done=49 resolved=4097 errors=4803 current=tests/hazmat/primitives/test_block.py
+[2026-04-09T22:28:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=116.2 files_done=50 resolved=4112 errors=4842 current=tests/hazmat/primitives/test_dh.py
+[2026-04-09T22:32:37Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=120.1 files_done=51 resolved=4241 errors=5008 current=src/cryptography/hazmat/primitives/hashes.py
+[2026-04-09T22:40:27Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=128.0 files_done=53 resolved=4334 errors=5343 current=src/cryptography/hazmat/_oid.py
+[2026-04-09T22:44:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=131.8 files_done=54 resolved=4334 errors=5508 current=tests/hazmat/primitives/test_hmac_vectors.py
+[2026-04-09T22:46:23Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=133.9 files_done=56 resolved=4381 errors=5597 current=tests/hazmat/primitives/test_ed448.py
+[2026-04-09T22:47:35Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=135.1 files_done=57 resolved=4406 errors=5648 current=src/cryptography/x509/name.py
+[2026-04-09T22:48:51Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=136.4 files_done=58 resolved=4466 errors=5702 current=tests/hazmat/primitives/test_x448.py
+[2026-04-09T22:49:46Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=137.3 files_done=59 resolved=4489 errors=5741 current=docs/_ext/linkcode_res.py
+[2026-04-09T22:50:53Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=138.4 files_done=62 resolved=4654 errors=5788 current=src/cryptography/hazmat/primitives/serialization/pkcs12.py
+[2026-04-09T22:51:54Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=139.4 files_done=65 resolved=4693 errors=5831 current=tests/wycheproof/test_aes.py
+[2026-04-09T22:52:41Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=140.2 files_done=66 resolved=4724 errors=5864 current=src/cryptography/hazmat/primitives/asymmetric/ed448.py
+[2026-04-09T22:54:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=141.9 files_done=68 resolved=4730 errors=5934 current=src/cryptography/hazmat/primitives/asymmetric/padding.py
+[2026-04-09T22:55:28Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=143.0 files_done=71 resolved=4789 errors=5981 current=tests/bench/test_aead.py
+[2026-04-09T22:56:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=143.6 files_done=72 resolved=4789 errors=6005 current=tests/hazmat/primitives/test_concatkdf.py
+[2026-04-09T22:57:40Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=145.2 files_done=74 resolved=4842 errors=6074 current=src/cryptography/hazmat/primitives/ciphers/modes.py
+[2026-04-09T22:59:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=146.5 files_done=76 resolved=4888 errors=6131 current=tests/hazmat/primitives/decrepit/test_3des.py
+[2026-04-09T22:59:37Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=147.1 files_done=78 resolved=4924 errors=6157 current=docs/development/custom-vectors/chacha20/verify_chacha20_overflow.py
+[2026-04-09T23:00:25Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=147.9 files_done=81 resolved=4951 errors=6191 current=src/cryptography/hazmat/decrepit/ciphers/algorithms.py
+[2026-04-09T23:01:21Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=148.9 files_done=84 resolved=4999 errors=6231 current=tests/wycheproof/test_dsa.py
+[2026-04-09T23:02:08Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=149.7 files_done=87 resolved=5073 errors=6264 current=src/cryptography/hazmat/primitives/kdf/pbkdf2.py
+[2026-04-09T23:03:01Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=150.6 files_done=90 resolved=5087 errors=6302 current=src/cryptography/hazmat/primitives/hmac.py
+[2026-04-09T23:03:35Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=151.1 files_done=92 resolved=5110 errors=6326 current=tests/hazmat/primitives/test_xofhash.py
+[2026-04-09T23:04:06Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=151.6 files_done=93 resolved=5122 errors=6348 current=tests/test_warnings.py
+[2026-04-09T23:04:52Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=152.4 files_done=97 resolved=5149 errors=6381 current=src/cryptography/hazmat/primitives/kdf/x963kdf.py
+[2026-04-09T23:05:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=153.1 files_done=99 resolved=5169 errors=6411 current=docs/development/custom-vectors/secp256k1/verify_secp256k1.py
+[2026-04-09T23:06:30Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=154.0 files_done=102 resolved=5178 errors=6451 current=tests/hazmat/primitives/test_hashes.py
+[2026-04-09T23:07:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=154.8 files_done=103 resolved=5184 errors=6482 current=tests/hazmat/primitives/decrepit/test_rc2.py
+[2026-04-09T23:07:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=155.4 files_done=105 resolved=5203 errors=6507 current=docs/development/custom-vectors/secp256k1/generate_secp256k1.py
+[2026-04-09T23:08:20Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=155.9 files_done=108 resolved=5219 errors=6529 current=release.py
+[2026-04-09T23:08:55Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=156.4 files_done=110 resolved=5234 errors=6552 current=src/cryptography/fernet.py
+[2026-04-09T23:10:01Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=157.5 files_done=111 resolved=5257 errors=6599 current=tests/wycheproof/test_chacha20poly1305.py
+[2026-04-09T23:11:20Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=158.9 files_done=115 resolved=5349 errors=6655 current=tests/wycheproof/test_hmac.py
+[2026-04-09T23:12:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=159.6 files_done=118 resolved=5379 errors=6686 current=src/_cffi_src/utils.py
+[2026-04-09T23:12:51Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=160.4 files_done=120 resolved=5394 errors=6720 current=tests/hazmat/test_oid.py
+[2026-04-09T23:13:32Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=161.1 files_done=124 resolved=5419 errors=6749 current=tests/hazmat/primitives/test_camellia.py
+[2026-04-09T23:14:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=161.8 files_done=129 resolved=5462 errors=6782 current=docs/development/custom-vectors/cast5/generate_cast5.py
+[2026-04-09T23:14:58Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=162.5 files_done=130 resolved=5468 errors=6810 current=tests/hazmat/primitives/test_pbkdf2hmac_vectors.py
+[2026-04-09T23:15:30Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=163.0 files_done=134 resolved=5490 errors=6833 current=tests/wycheproof/test_utils.py
+[2026-04-09T23:16:03Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=163.6 files_done=138 resolved=5503 errors=6856 current=src/cryptography/hazmat/primitives/ciphers/algorithms.py
+[2026-04-09T23:16:35Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=164.1 files_done=144 resolved=5550 errors=6879 current=src/_cffi_src/build_openssl.py
+[2026-04-09T23:17:09Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=164.7 files_done=150 resolved=5555 errors=6903 current=tests/bench/test_fernet.py
+[2026-04-09T23:17:40Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=165.2 files_done=156 resolved=5563 errors=6925 current=src/cryptography/hazmat/primitives/kdf/argon2.py
+[2026-04-09T23:21:16Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=168.8 files_done=171 resolved=5759 errors=7063 current=src/rust/src/backend/ec.rs
+[2026-04-09T23:24:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=172.2 files_done=172 resolved=5926 errors=7207 current=src/rust/cryptography-x509-verification/src/policy/extension.rs
+[2026-04-09T23:27:58Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=175.5 files_done=173 resolved=6042 errors=7347 current=src/rust/src/backend/ciphers.rs
+[2026-04-09T23:32:25Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=180.0 files_done=174 resolved=6171 errors=7538 current=src/rust/src/x509/common.rs
+[2026-04-09T23:38:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=185.9 files_done=175 resolved=6295 errors=7792 current=src/rust/src/backend/utils.rs
+[2026-04-09T23:42:23Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=189.9 files_done=176 resolved=6390 errors=7965 current=src/rust/src/x509/extensions.rs
+[2026-04-09T23:48:32Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=196.1 files_done=177 resolved=6618 errors=8229 current=src/rust/src/x509/certificate.rs
+[2026-04-09T23:56:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=204.5 files_done=178 resolved=6842 errors=8589 current=src/rust/src/backend/rsa.rs
+[2026-04-10T00:02:38Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=210.2 files_done=179 resolved=7069 errors=8834 current=src/rust/src/backend/x25519.rs
+[2026-04-10T00:08:32Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=216.1 files_done=181 resolved=7274 errors=9087 current=src/rust/src/types.rs
+[2026-04-10T00:12:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=220.5 files_done=182 resolved=7281 errors=9277 current=src/rust/src/backend/kdf.rs
+[2026-04-10T00:14:44Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=222.3 files_done=183 resolved=7354 errors=9353 current=src/rust/cryptography-x509-verification/src/policy/mod.rs
+[2026-04-10T00:17:51Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=225.4 files_done=184 resolved=7521 errors=9486 current=src/rust/src/pkcs12.rs
+[2026-04-10T00:22:50Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=230.4 files_done=185 resolved=7667 errors=9700 current=src/rust/src/backend/ed448.rs
+[2026-04-10T00:24:17Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=231.8 files_done=187 resolved=7723 errors=9762 current=src/rust/src/x509/csr.rs
+[2026-04-10T00:26:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=233.6 files_done=188 resolved=7801 errors=9837 current=src/rust/src/backend/keys.rs
+[2026-04-10T00:29:09Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=236.7 files_done=189 resolved=7864 errors=9971 current=src/rust/src/backend/aead.rs
+[2026-04-10T00:32:32Z] [iter=1] CHECKPOINT TRIGGERED elapsed_min=240.1 files_completed=189 new_files_this_iter=189 mem_mb=923 MB
+[2026-04-10T00:32:32Z] [iter=1] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/622d672e429a7cff836a23c5903683dbec1901f5.nq.gz triples=121970
+[2026-04-10T00:32:35Z] [iter=1] Checkpoint written, exiting with code 7
+[2026-04-10T00:32:35Z] [iter=1] PHASE END: enrich (checkpointed) elapsed_s=14404 elapsed_min=240.1 files_completed=189
