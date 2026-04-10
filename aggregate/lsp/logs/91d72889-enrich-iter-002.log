@@ -1,0 +1,58 @@
+[2026-04-10T05:09:45Z] === ENRICH ITERATION 2 START | repo=pyca/cryptography sha=91d72889 ===
+[2026-04-10T05:09:45Z] [iter=2] PHASE START: enrich repo=pyca/cryptography sha=91d72889 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/91d72889-enrich-iter-002.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/91d728897bdad30cd5c79a2b23e207f1f050d587.nq.gz
+[2026-04-10T05:10:06Z] [iter=2] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-04-10T05:10:36Z] [iter=2] AST store loaded triples=3592077 load_secs=29 mem_mb=932 MB
+[2026-04-10T05:10:36Z] [iter=2] Step 2: Finding LSP targets mem_mb=932 MB
+[2026-04-10T05:10:46Z] [iter=2] LSP targets found call_sites=33387 imports=1367 extends=152 implements=54 secs=10
+[2026-04-10T05:10:51Z] [iter=2] Loaded checkpoint partial graph triples=122939
+[2026-04-10T05:11:00Z] [iter=2] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=932 MB
+[2026-04-10T05:11:22Z] [iter=2] Position index built positions=236862 nodes_with_types=312145 secs=22 mem_mb=1038 MB
+[2026-04-10T05:11:22Z] [iter=2] Step 3: Starting LSP resolution mem_mb=1038 MB already_completed_types=[] already_completed_files=192
+[2026-04-10T05:11:22Z] [iter=2] Resolving target type target_type=call_site count=33387
+[2026-04-10T05:11:42Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=1.9 files_done=0 resolved=0 errors=0 current=src/rust/src/x509/ocsp_resp.rs
+[2026-04-10T05:17:39Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=7.9 files_done=1 resolved=74 errors=242 current=src/rust/src/x509/certificate.rs
+[2026-04-10T05:26:19Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=16.6 files_done=2 resolved=298 errors=602 current=src/rust/src/asn1.rs
+[2026-04-10T05:26:52Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=17.1 files_done=3 resolved=335 errors=625 current=src/rust/src/x509/sct.rs
+[2026-04-10T05:27:57Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=18.2 files_done=4 resolved=377 errors=670 current=src/rust/src/test_support.rs
+[2026-04-10T05:28:35Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=18.8 files_done=5 resolved=394 errors=696 current=src/rust/src/x509/ocsp_req.rs
+[2026-04-10T05:29:30Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=19.7 files_done=6 resolved=437 errors=735 current=src/rust/cryptography-x509-verification/src/trust_store.rs
+[2026-04-10T05:30:50Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=21.1 files_done=8 resolved=478 errors=791 current=src/rust/src/backend/dsa.rs
+[2026-04-10T05:34:02Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=24.3 files_done=9 resolved=577 errors=925 current=src/rust/cryptography-x509-verification/src/lib.rs
+[2026-04-10T05:36:02Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=26.3 files_done=10 resolved=641 errors=1009 current=src/rust/src/backend/x25519.rs
+[2026-04-10T05:39:18Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=29.5 files_done=12 resolved=852 errors=1146 current=src/rust/src/x509/ocsp.rs
+[2026-04-10T05:40:26Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=30.7 files_done=13 resolved=879 errors=1193 current=src/rust/src/oid.rs
+[2026-04-10T05:42:21Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=32.6 files_done=15 resolved=967 errors=1273 current=src/rust/src/backend/ec.rs
+[2026-04-10T05:45:48Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=36.0 files_done=16 resolved=1134 errors=1417 current=src/rust/src/backend/ed25519.rs
+[2026-04-10T05:47:34Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=37.8 files_done=18 resolved=1215 errors=1491 current=src/rust/src/x509/verify/mod.rs
+[2026-04-10T05:50:26Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=40.7 files_done=19 resolved=1296 errors=1610 current=src/rust/src/backend/ciphers.rs
+[2026-04-10T05:54:59Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=45.2 files_done=20 resolved=1425 errors=1801 current=src/rust/cryptography-openssl/src/aead.rs
+[2026-04-10T05:56:00Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=46.2 files_done=23 resolved=1455 errors=1843 current=src/rust/cryptography-x509/src/oid.rs
+[2026-04-10T05:56:45Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=47.0 files_done=26 resolved=1645 errors=1875 current=src/rust/src/backend/hashes.rs
+[2026-04-10T05:57:31Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=47.8 files_done=27 resolved=1696 errors=1907 current=src/rust/cryptography-key-parsing/src/dsa.rs
+[2026-04-10T05:58:17Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=48.5 files_done=29 resolved=1750 errors=1939 current=src/rust/src/backend/cmac.rs
+[2026-04-10T05:59:06Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=49.3 files_done=31 resolved=1799 errors=1973 current=src/rust/cryptography-openssl/src/poly1305.rs
+[2026-04-10T05:59:45Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=50.0 files_done=33 resolved=1851 errors=1999 current=src/rust/src/backend/x448.rs
+[2026-04-10T06:04:34Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=54.8 files_done=35 resolved=1885 errors=2200 current=src/rust/cryptography-x509/src/common.rs
+[2026-04-10T06:05:22Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=55.6 files_done=36 resolved=1925 errors=2233 current=docs/development/custom-vectors/aes-192-gcm-siv/verify-aes192gcmsiv/src/main.rs
+[2026-04-10T06:05:56Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=56.2 files_done=38 resolved=1942 errors=2255 current=src/rust/cryptography-x509/src/pkcs12.rs
+[2026-04-10T06:06:35Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=56.8 files_done=41 resolved=1978 errors=2281 current=src/rust/cryptography-x509-verification/src/certificate.rs
+[2026-04-10T06:07:18Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=57.5 files_done=43 resolved=2004 errors=2311 current=src/rust/cryptography-openssl/src/fips.rs
+[2026-04-10T06:07:50Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=58.1 files_done=51 resolved=2060 errors=2333 current=src/rust/src/x509/verify/policy.rs
+[2026-04-10T06:08:33Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=58.8 files_done=55 resolved=2095 errors=2363 current=src/rust/src/exceptions.rs
+[2026-04-10T06:09:06Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=59.3 files_done=59 resolved=2139 errors=2386 current=src/rust/src/declarative_asn1/types.rs
+[2026-04-10T06:09:52Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=60.1 files_done=64 resolved=2174 errors=2415 current=docs/development/custom-vectors/rc2/rc2/rc2.go
+[2026-04-10T06:10:53Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=61.1 files_done=65 resolved=2185 errors=2456 current=docs/development/custom-vectors/arc4/verify_arc4.go
+[2026-04-10T06:11:36Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=61.8 files_done=66 resolved=2199 errors=2486 current=docs/development/custom-vectors/rc2/genrc2.go
+[2026-04-10T06:13:18Z] [iter=2] Target type resolved target_type=call_site resolved=2221 errors=2556 secs=3716 mem_mb=1038 MB
+[2026-04-10T06:13:18Z] [iter=2] Resolving target type target_type=import_statement count=1367
+[2026-04-10T06:13:18Z] [iter=2] HEARTBEAT target_type=import_statement elapsed_min=63.6 files_done=0 resolved=0 errors=0 current=src/cryptography/hazmat/bindings/_rust/pkcs7.pyi
+[2026-04-10T06:13:47Z] [iter=2] Target type resolved target_type=import_statement resolved=283 errors=0 secs=29 mem_mb=1038 MB
+[2026-04-10T06:13:47Z] [iter=2] Resolving target type target_type=extends_clause count=152
+[2026-04-10T06:13:48Z] [iter=2] Target type resolved target_type=extends_clause resolved=1 errors=0 secs=1 mem_mb=1038 MB
+[2026-04-10T06:13:48Z] [iter=2] Resolving target type target_type=implements_clause count=54
+[2026-04-10T06:13:54Z] [iter=2] HEARTBEAT target_type=implements_clause elapsed_min=64.1 files_done=0 resolved=0 errors=0 current=src/rust/cryptography-x509/src/common.rs
+[2026-04-10T06:14:03Z] [iter=2] Target type resolved target_type=implements_clause resolved=31 errors=0 secs=15 mem_mb=1038 MB
+[2026-04-10T06:14:45Z] [iter=2] Step 5: Writing final enrichment file triples=227486
+[2026-04-10T06:14:50Z] [iter=2] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/91d728897bdad30cd5c79a2b23e207f1f050d587.nq.gz size_kb=5454
+[2026-04-10T06:14:50Z] [iter=2] Checkpoint cleared (enrichment complete)
+[2026-04-10T06:14:50Z] [iter=2] PHASE END: enrich elapsed_s=3904 elapsed_min=65.1 total_triples=227486
